@@ -191,3 +191,21 @@ footer button[type="submit"]:hover {
   margin-bottom: 10px;
 }
 
+footer .redes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+footer .redes .icono-red {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+footer .redes .icono-red:hover {
+  transform: scale(1.1);
+}
+

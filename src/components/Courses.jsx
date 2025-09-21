@@ -19,9 +19,8 @@ function Courses() {
             style={{ cursor: "pointer" }}
           >
             <img
-              src={`/images/${curso.imagen}`}
+              src={`${import.meta.env.BASE_URL}images/${curso.imagen}`}
               alt={curso.titulo}
-
             />
             <h3>{curso.titulo}</h3>
             <p>{curso.desc}</p>
@@ -38,5 +37,6 @@ function Courses() {
 }
 
 export default Courses;
+
 
 

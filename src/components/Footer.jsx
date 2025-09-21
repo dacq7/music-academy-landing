@@ -31,19 +31,44 @@ function Footer() {
         <a href={`mailto:${contacto.email}`}>{contacto.email}</a>
       </p>
 
-      <div>
-        <a href={contacto.redes.instagram} target="_blank" rel="noopener noreferrer">
-          Instagram
+      {/* 🔹 Redes sociales con opción de íconos */}
+      <div className="redes">
+        <a
+          href={contacto.redes.instagram}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={`${import.meta.env.BASE_URL}images/instagram.png`}
+            alt="Instagram"
+            className="icono-red"
+          />
         </a>
-        <a href={contacto.redes.facebook} target="_blank" rel="noopener noreferrer">
-          Facebook
+        <a
+          href={contacto.redes.facebook}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={`${import.meta.env.BASE_URL}images/facebook.png`}
+            alt="Facebook"
+            className="icono-red"
+          />
         </a>
-        <a href={contacto.redes.youtube} target="_blank" rel="noopener noreferrer">
-          YouTube
+        <a
+          href={contacto.redes.youtube}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={`${import.meta.env.BASE_URL}images/youtube.png`}
+            alt="YouTube"
+            className="icono-red"
+          />
         </a>
       </div>
 
-      {/* 📌 Formulario de reserva */}
+      {/* 🔹 Formulario de reserva */}
       <div className="reserva">
         <h3>Reserva tu clase gratis</h3>
         <form onSubmit={handleSubmit}>
@@ -80,11 +105,15 @@ function Footer() {
         </form>
       </div>
 
-      <p>© {new Date().getFullYear()} Academia de Música. Todos los derechos reservados.</p>
+      <p>
+        © {new Date().getFullYear()} Academia de Música. Todos los derechos
+        reservados.
+      </p>
     </footer>
   );
 }
 
 export default Footer;
+
 
 
