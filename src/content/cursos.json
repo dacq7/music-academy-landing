@@ -1,0 +1,8 @@
+[
+  { "id": 1, "titulo": "Piano", "desc": "Desde cero hasta avanzado" },
+  { "id": 2, "titulo": "Guitarra", "desc": "Acústica y eléctrica" },
+  { "id": 3, "titulo": "Violín", "desc": "Técnica y afinación" },
+  { "id": 4, "titulo": "Canto", "desc": "Proyección y afinación" },
+  { "id": 5, "titulo": "Composición", "desc": "Armonía y forma" },
+  { "id": 6, "titulo": "Teoría musical", "desc": "Lectura y solfeo" }
+]
