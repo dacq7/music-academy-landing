@@ -1,18 +1,18 @@
 function Hero() {
   return (
-    <section id="hero" style={{ textAlign: "center", padding: "60px 20px" }}>
+    <section id="hero" style={{ textAlign: "center", padding: "100px 20px" }}>
+      <img
+        src="/images/hero.png"
+        alt="Academia de Música"
+        style={{ maxWidth: "300px", marginBottom: "20px", borderRadius: "12px" }}
+      />
       <h1>Academia de Música</h1>
       <p>Clases de piano, guitarra, violín, canto, composición y teoría musical</p>
       <button
-        style={{
-          padding: "12px 24px",
-          marginTop: "20px",
-          backgroundColor: "#1E3A8A",
-          color: "#fff",
-          border: "none",
-          borderRadius: "8px",
-          cursor: "pointer",
-        }}
+        onClick={() =>
+          document.getElementById("contacto").scrollIntoView({ behavior: "smooth" })
+        }
+        style={{ marginTop: "20px" }}
       >
         Reserva tu clase gratis
       </button>
@@ -21,4 +21,5 @@ function Hero() {
 }
 
 export default Hero;
-// TODO: implementar Hero
+
+

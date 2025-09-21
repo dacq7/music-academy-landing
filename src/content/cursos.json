@@ -1,8 +1,9 @@
 [
-  { "id": 1, "titulo": "Piano", "desc": "Desde cero hasta avanzado" },
-  { "id": 2, "titulo": "Guitarra", "desc": "Acústica y eléctrica" },
-  { "id": 3, "titulo": "Violín", "desc": "Técnica y afinación" },
-  { "id": 4, "titulo": "Canto", "desc": "Proyección y afinación" },
-  { "id": 5, "titulo": "Composición", "desc": "Armonía y forma" },
-  { "id": 6, "titulo": "Teoría musical", "desc": "Lectura y solfeo" }
+  { "id": 1, "titulo": "Piano", "desc": "Desde cero hasta avanzado", "imagen": "piano.png", "detalle": "Aprenderás desde la lectura de partituras básicas hasta técnicas avanzadas de interpretación en piano clásico y moderno." },
+  { "id": 2, "titulo": "Guitarra", "desc": "Acústica y eléctrica", "imagen": "guitarra.png", "detalle": "Explora acordes, rasgueos y solos, abarcando estilos como rock, pop, blues y música latinoamericana." },
+  { "id": 3, "titulo": "Violín", "desc": "Técnica y afinación", "imagen": "violin.png", "detalle": "Trabajaremos postura, arco y entonación, desarrollando tu oído musical y repertorio clásico y contemporáneo." },
+  { "id": 4, "titulo": "Canto", "desc": "Proyección y afinación", "imagen": "canto.png", "detalle": "Mejora tu técnica vocal, respiración y proyección para cantar con confianza en distintos géneros." },
+  { "id": 5, "titulo": "Composición", "desc": "Armonía y forma", "imagen": "composicion.png", "detalle": "Aprenderás a estructurar canciones y piezas musicales, desarrollando tu estilo propio y creatividad." },
+  { "id": 6, "titulo": "Teoría musical", "desc": "Lectura y solfeo", "imagen": "teoria.png", "detalle": "Comprenderás los fundamentos del lenguaje musical: ritmo, intervalos, escalas y armonía." }
 ]
+

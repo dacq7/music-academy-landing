@@ -1,23 +1,35 @@
+import { useState } from "react";
 import cursos from "../content/cursos.json";
 
 function Courses() {
+  const [cursoActivo, setCursoActivo] = useState(null);
+
+  const toggleDetalle = (id) => {
+    setCursoActivo(cursoActivo === id ? null : id);
+  };
+
   return (
-    <section id="cursos" style={{ padding: "60px 20px" }}>
-      <h2 style={{ textAlign: "center", marginBottom: "20px" }}>Nuestros Cursos</h2>
-      <ul style={{ maxWidth: "600px", margin: "0 auto", listStyle: "none", padding: 0 }}>
+    <section id="cursos">
+      <h2>Nuestros Cursos</h2>
+      <ul>
         {cursos.map((curso) => (
           <li
             key={curso.id}
-            style={{
-              marginBottom: "20px",
-              padding: "16px",
-              border: "1px solid #ddd",
-              borderRadius: "8px",
-              textAlign: "center",
-            }}
+            onClick={() => toggleDetalle(curso.id)}
+            style={{ cursor: "pointer" }}
           >
+            <img
+              src={`/images/${curso.imagen}`}
+              alt={curso.titulo}
+
+            />
             <h3>{curso.titulo}</h3>
             <p>{curso.desc}</p>
+            {cursoActivo === curso.id && (
+              <p style={{ marginTop: "10px", color: "var(--color-text-muted)" }}>
+                {curso.detalle}
+              </p>
+            )}
           </li>
         ))}
       </ul>
@@ -26,4 +38,5 @@ function Courses() {
 }
 
 export default Courses;
-// TODO: implementar Courses
+
+
